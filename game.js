@@ -206,12 +206,12 @@ const hiddenEasterEgg = {
 
 // Загрузка изображений
 function loadImages() {
-    player.image.src = 'artem.png';
-    nikita.image.src = 'nikita.png';
-    mitrofan.image.src = 'mitrofan.png';
-    computer.image.src = 'computer.png';
-    policeman.image.src = 'policeman.png';
-    hiddenEasterEgg.image.src = 'easterEgg.png';
+    player.image.src = 'images/artem.png';
+    nikita.image.src = 'images/nikita.png';
+    mitrofan.image.src = 'images/mitrofan.png';
+    computer.image.src = 'images/computer.png';
+    policeman.image.src = 'images/policeman.png';
+    hiddenEasterEgg.image.src = 'images/easterEgg.png';
 
     player.image.onload = () => console.log('Player image loaded');
     nikita.image.onload = () => console.log('Nikita image loaded');
