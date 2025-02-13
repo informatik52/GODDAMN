@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра про Артема</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="questBox">
+            <h2>Квесты:</h2>
+            <p id="questText"></p>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="menu">
+            <h1>Игра про Артема</h1>
+            <button onclick="startGame()">Начать игру</button>
+        </div>
+        <div id="dialogBox" class="hidden">
+            <p id="dialogText"></p>
+            <input type="text" id="commandInput" class="hidden" placeholder="Введите команду">
+            <button onclick="closeDialog()" id="dialogButton">Продолжить</button>
+        </div>
+        <button id="interactButton" class="hidden" onclick="interact()">Взаимодействовать</button>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html>
